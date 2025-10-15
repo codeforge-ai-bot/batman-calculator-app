@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batman Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="batman-app">
+    <header class="hero">
+      <div class="bat-logo" aria-label="Batman logo" title="Batman">
+        <!-- Batman logo SVG -->
+        <svg width="80" height="40" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" fill="#ffd400" aria-label="Bat Signal">
+          <path d="M100 5 L120 25 L180 25 L140 55 L160 95 L100 70 L40 95 L60 55 L20 25 L80 25 Z" fill="#ffd400" opacity="0.95"/>
+        </svg>
+      </div>
+      <h1>Batman Calculator</h1>
+    </header>
+
+    <main class="calculator">
+      <div id="display" class="display" aria-label="Calculator display">0</div>
+      <div class="buttons" id="buttons">
+        <!-- Row 1 -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn op" data-value="/">/</button>
+        <!-- Row 2 -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn op" data-value="*">*</button>
+        <!-- Row 3 -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn op" data-value="-">-</button>
+        <!-- Row 4 -->
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn equal" data-value="=">=</button>
+        <button class="btn op" data-value="+">+</button>
+        <!-- Row 5 -->
+        <button class="btn clear" data-value="C" style="grid-column: span 4;">C</button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
